@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>CSS Responsive Template</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        margin: 0%;
+        padding: 0;
+        font-size: 62.5%;
+      }
+      body {
+        margin: 0;
+        font-family: Trebuchet, sans-serif;
+        font-size: 1.7rem;
+        background-image: url(images/mountains.jpg);
+        background-size: cover;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #container {
+        max-width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .header {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 30px;
+      }
+      .header h1 {
+        padding-top: 100px;
+        padding-left: 250px;
+        font-size: 35px;
+      }
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      .column.sideright {
+        width: 20%;
+        margin-bottom: -5000%;
+        padding-bottom: -5000%;
+      }
+      .column.sideright {
+        width: 15%;
+        margin-bottom: -5000%;
+        padding-bottom: 5000%;
+      }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      nav {
+        background-color: #444;
+        padding-left: 20%;
+      }
+      .topnav {
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+      }
+      .active {
+        background-color: darkorange;
+        color: white;
+      }
+      .topnav .icon {
+        display: none;
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .dropdown .dropbtn {
+        font-size: 1.7rem;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ddd;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav a:hover,
+      .topnav:focus,
+      .dropdown:hover,
+      .dropdown:focus,
+      .dropbtn {
+        background-color: #555;
+        color: white;
+      }
+      .dropdown-content a:hover,
+      .dropdown-content a:focus {
+        background-color: orange;
+        color: black;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      @media screen and (max-width: 500px) {
+        .column.sideleft,
+        .column.middle,
+        .column.sideright {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .topnav a :not(:first-child),
+        .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+        nav {
+          padding-left: 0%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive.dropdown {
+          float: none;
+        }
+        .topnav.responsive.dropdown-content {
+          position: relative;
+        }
+        .topnav.responsive.dropdown.dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="header">
+          <a href=""
+            ><img
+              src="images/myLogo.jpg"
+              style="float: left"
+              width="200p"
+              height="200p"
+              alt="generic logo - link to home"
+          /></a>
+        </div>
+      </header>
+      <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+        <a href="#home" class="active" aria-current="page">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                <a href="Dropdown +"></a>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+        onclick="myFunction()"
+        >&#9776;
+    </a>
+      </nav>
+      <div class="row" style="background-color: #bbb;">
+        <aside>
+            <div class="column sideleft" style="background-color: #ddd;">Something
+
+            </div>
+        </aside>
+        <main>
+            <div class="column middle" style="background-color: #bbb;">
+                <article>
+                    <h1>
+                        Accessibility Tutorial
+                    </h1>
+                    <p>
+                        By Me
+                    </p>
+                    <p>
+                        A page to help explain html5 semantic markup
+                    </p>
+                    <section>
+                        <h2>
+                            The Document Outline -Section Tags
+                        </h2>
+                        <p>
+                            HTML5 has new "sectioning content" elements will have an impact on the document outline. These tags all have a structural meaning and are block elements by default
+                        </p>
+                        <h3>Headers</h3>
+                        <p>
+                            The <code>&lt;header&gt;</code> element is a sectioning tag. The w3c says: 
+                            <blockquote>
+                                "The &lt;header &gt; element specifies a header for a document or section."
+                            </blockquote>
+                            It can be used for introductory content and you can technically use more than one, but most peoiple tend to use it just for the banner/header info for the page.
+                        <h3>Footer</h3>
+                        <p>
+                            The <code>&lt; footer &gt;</code> element describes the information at the bottom of the page, and can include such things as: textr-only nav, links to the sitemap and other utilities, authorship information, copyright information, back-to-top links, authorship dates, and so on.
+                        </p>
+                        <h3>Sections</h3>
+                        <p>
+                            The w3c, de3scribes the <code>&lt;section &gt;</code> tag as "a thematic grouping of content, typically with a heading."
+                        </p>
+                        <h3>Articles</h3>
+                        <p>
+                            According to w3c, the <code>&lt;article&gt;</code> tag "specifies independent, self-contained content. "Essentially, this is any content that could be reused somewhere else. It could apply to a blog post, a magazine or news story,a forum post, etc.
+                        </p>
+                        <h3>
+                            Asides
+                        </h3>
+                        <p>
+                            The <code>&lt;aside &gt;</code> tag is for content that is apart from the main article, but related to it. For example , <q>"a list of related links to the article that doesnt get included into the flow."</q>
+                        </p>
+                        <h3>Main</h3>
+                        <p>This is a unique tag, that can only be used one time on a page. It should describe the main content, and it can't be nested in any of the above tags. Note: dont use this for styling either.
+</p>
+<blockquote>
+    The content inside the the <code>&lt;main &gt; </code> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site  logos, and search forms. (<a>
+        href="https://www.w3schools.com/tags/tag_main.asp"> w3schools 
+    </a>)
+</blockquote>
+                    </section>
+                    <section>
+                        <h2>w3schools</h2>
+                        <p>You'll note I'm refering to them a lot. The W3C (World Wide Web Consortium) is the body that governs HTML5 standards  and their 
+                            <a href="https://www.w3schools.com/html/default.asp" title="check this out to get some additional definitions and tutorials">w3school is a useful place</a>></a> to play around with these tags and getdefinition of these tags
+                        </p>
+                    </section>
+                    <section>
+                        <h2>
+                            Inline Semantic HTML
+                        </h2>
+                        <p>
+                            The <code>&lt; time &gt;</code> "tag defines a human =readable date/time" (<a href="https://www.w3schools.com/tags/tag_time.asp">
+                               w3schools 
+                            </a>) but it's not sectioning content.
+                        </p>
+                    </section>
+                </article>
+            </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

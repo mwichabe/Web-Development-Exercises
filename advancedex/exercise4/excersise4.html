@@ -29,8 +29,14 @@
       color: #fff;
       text-decoration: none;
       padding: 10px 20px;
-      border-radius: 5px;
+      border-radius: 20px;
       background-color: #666;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+
+    .menu-item a:hover {
+      background-color: #444;
     }
 
     /* Responsive Styles */
@@ -46,13 +52,13 @@
 
     @media only screen and (min-width: 601px) {
       .menu-item a {
-        background-color: #444;
+        background-color: #4CAF50;
       }
     }
 
     @media only screen and (min-width: 901px) {
       .menu-item a {
-        background-color: #555;
+        background-color: #f44336;
       }
     }
 
@@ -60,13 +66,17 @@
     .content {
       padding: 20px;
       display: none;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    .content h1 {
       color: #333;
+      margin-bottom: 20px;
     }
 
-    p {
+    .content p {
       color: #666;
       line-height: 1.6;
     }
@@ -91,17 +101,41 @@
 
 <div id="home" class="content">
   <h1>Home Page</h1>
-  <p>Welcome to our website! This is the Home page.</p>
+  <p>Welcome to our website!
+
+    We're dedicated to providing exceptional [products/services/solutions] tailored to meet your needs. With a focus on innovation, quality, and customer satisfaction, we strive to exceed expectations and deliver outstanding results.
+    
+    Discover a wide range of [products/services/solutions] designed to [address specific needs/solve particular challenges/improve efficiency], all backed by our team of experienced professionals who are committed to delivering excellence in every aspect of our work.
+    
+    Explore our website to learn more about who we are, what we do, and how we can help you achieve your goals. Whether you're a small business looking to grow, an individual seeking [specific solutions], or a corporation in need of [specialized services], we're here to support you every step of the way.
+    
+    Thank you for visiting us. We look forward to serving you and building a successful partnership together.
+    
+    This introduction aims to welcome visitors, convey the company's commitment to excellence, highlight the range of offerings, and express gratitude for the visitor's interest. It sets a positive tone and invites further exploration of the website.</p>
 </div>
 
 <div id="about" class="content">
   <h1>About Page</h1>
-  <p>Learn more about our company and our team.</p>
+  <p>About Us
+
+    We are passionate about [describe the core mission or focus of the company]. Founded in [year], our journey began with a simple goal: to [describe the initial purpose or vision of the company].
+    
+    Over the years, we have grown and evolved, but our commitment to [core values or principles] remains unwavering. We believe in [describe key beliefs or philosophies], and this drives everything we do.
+    
+    Our team is comprised of dedicated professionals who bring a wealth of experience and expertise to the table. From [mention key areas of specialization or industries served], we have the skills and knowledge to deliver exceptional results for our clients.
+    
+    What sets us apart is our dedication to [highlight unique aspects or approaches]. Whether it's our personalized approach to client relationships, our innovative solutions, or our unwavering commitment to quality, we go above and beyond to exceed expectations.
+    
+    But don't just take our word for it. Our track record speaks for itself. With countless satisfied clients and [mention any notable achievements or milestones], we have earned a reputation for excellence in the industry.
+    
+    As we look to the future, we remain committed to [describe future goals or aspirations]. We are excited about the possibilities ahead and look forward to continuing to serve our clients and make a positive impact in the communities we serve.
+    
+    Thank you for considering [Company Name]. We are honored to be your partner on this journey.</p>
 </div>
 
 <div id="services" class="content">
   <h1>Services Page</h1>
-  <p>Explore our range of services and solutions.</p>
+  <p>We offer a comprehensive range of services designed to meet the diverse needs of our clients. With a focus on Motor car export, we provide tailored solutions to help you achieve your goals and drive success.</p>
 </div>
 
 <div id="contact" class="content">

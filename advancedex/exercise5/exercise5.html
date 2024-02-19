@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customized W3.CSS Design</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    /* Custom Colors */
+    .custom-background {
+      background-color: #f0f0f0; /* Light Gray */
+    }
+
+    .custom-primary {
+      background-color: #3498db; /* Primary Blue */
+      color: #fff; /* White */
+    }
+
+    .custom-secondary {
+      background-color: #2ecc71; /* Secondary Green */
+      color: #fff; /* White */
+    }
+
+    /* Custom Navigation */
+    .custom-navbar {
+      background-color: #333; /* Dark Gray */
+      color: #fff; /* White */
+    }
+
+    /* Custom Header */
+    .custom-header {
+      background-color: #fff; /* White */
+      color: #333; /* Dark Gray */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .custom-header h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .custom-header p {
+      font-size: 18px;
+    }
+
+    /* Custom Footer */
+    .custom-footer {
+      background-color: #333; /* Dark Gray */
+      color: #fff; /* White */
+      padding: 20px;
+      text-align: center;
+    }
+
+    .custom-footer a {
+      color: #fff; /* White */
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #3498db; /* Primary Blue */
+      color: #fff; /* White */
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: none;
+    }
+
+    .back-to-top:hover {
+      background-color: #2ecc71; /* Secondary Green */
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 600px) {
+      .custom-header h1 {
+        font-size: 24px;
+      }
+
+      .custom-header p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body class="custom-background">
+
+<!-- Header -->
+<header class="custom-header">
+    <img src="images/myLogo.jpg" alt="Company Logo" style="max-height: 50px;">
+  <h1>WhereGoes</h1>
+  <p>We have what you need!</p>
+</header>
+
+<!-- Navigation -->
+<div class="w3-bar w3-custom-navbar">
+  <a href="exercise5.html" class="w3-bar-item w3-button">Home</a>
+  <a href="about.html" class="w3-bar-item w3-button">About</a>
+  <a href="services.html" class="w3-bar-item w3-button">Services</a>
+  <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
+</div>
+
+<!-- Content -->
+<div class="w3-container">
+  <!-- Home Page Content -->
+  <div id="home" style="display: block;">
+    <h2>Home Page</h2>
+    <p>Welcome to our website! This is the home page content.</p>
+  </div>
+
+  <!-- About Page Content -->
+  <div id="about" style="display: none;">
+    <h2>About Page</h2>
+    <p>About us content goes here.</p>
+  </div>
+
+  <!-- Services Page Content -->
+  <div id="services" style="display: none;">
+    <h2>Services Page</h2>
+    <p>Our services content goes here.</p>
+  </div>
+
+  <!-- Contact Page Content -->
+  <div id="contact" style="display: none;">
+    <h2>Contact Page</h2>
+    <p>Contact us content goes here.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="custom-footer">
+  <nav>
+    <a href="exercise5.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="services.html">Services</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+  <a href="#" class="back-to-top">Back to Top</a>
+</footer>
+
+<!-- Script for Back to Top Button -->
+<script>
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.querySelector('.back-to-top').style.display = "block";
+    } else {
+      document.querySelector('.back-to-top').style.display = "none";
+    }
+  }
+
+  document.querySelector('.back-to-top').onclick = function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+</script>
+
+</body>
+</html>
