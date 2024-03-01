@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Your Website</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      max-width: 100px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .column {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .responsive-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .dummy-text {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      max-width: 300px;
+    }
+
+    .dummy-text h2 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .dummy-text p {
+      color: #666;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img src="images/logo.jpg" alt="Your Website Logo" class="logo">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="intro-text">
+      <h1>Welcome to Our Team</h1>
+      <p>We are a dedicated team of professionals passionate about creating exceptional digital experiences.</p>
+    </div>
+    
+    <!-- Team Member 1 -->
+    <div class="column">
+      <img src="images/ceo.jpg" class="responsive-image" alt="Team Member 1">
+      <div class="dummy-text">
+        <h2>Cicilia Zhuo</h2>
+        <p>Position: Web Developer</p>
+        <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et odio non tellus dictum mattis.</p>
+      </div>
+    </div>
+
+    <!-- Team Member 2 -->
+    <div class="column">
+      <img src="images/graphicDesig.jpg" class="responsive-image" alt="Team Member 2">
+      <div class="dummy-text">
+        <h2>James</h2>
+        <p>Position: Graphic Designer</p>
+        <p>Bio: Sed commodo velit sed arcu congue, vel tincidunt magna fermentum.</p>
+      </div>
+    </div>
+
+    <!-- Add more team members as needed -->
+  </div>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>CSS Responsive Template</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        margin: 0%;
+        padding: 0;
+        font-size: 62.5%;
+      }
+      body {
+        margin: 0;
+        font-family: Trebuchet, sans-serif;
+        font-size: 1.7rem;
+        background-image: url(images/mountains.jpg);
+        background-size: cover;
+      }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #container {
+        max-width: 980px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .header {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 30px;
+      }
+      .header h1 {
+        padding-top: 100px;
+        padding-left: 250px;
+        font-size: 35px;
+      }
+      .column {
+        float: left;
+        padding: 10px;
+      }
+      .column.sideright {
+        width: 20%;
+        margin-bottom: -5000%;
+        padding-bottom: -5000%;
+      }
+      .column.sideright {
+        width: 15%;
+        margin-bottom: -5000%;
+        padding-bottom: 5000%;
+      }
+      .row::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .footer {
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        text-align: center;
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      nav {
+        background-color: #444;
+        padding-left: 20%;
+      }
+      .topnav {
+        overflow: hidden;
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1.4rem 1.6rem;
+        text-decoration: none;
+      }
+      .active {
+        background-color: darkorange;
+        color: white;
+      }
+      .topnav .icon {
+        display: none;
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .dropdown .dropbtn {
+        font-size: 1.7rem;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ddd;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 1.2rem 1.6rem;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      .topnav a:hover,
+      .topnav:focus,
+      .dropdown:hover,
+      .dropdown:focus,
+      .dropbtn {
+        background-color: #555;
+        color: white;
+      }
+      .dropdown-content a:hover,
+      .dropdown-content a:focus {
+        background-color: orange;
+        color: black;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      @media screen and (max-width: 500px) {
+        .column.sideleft,
+        .column.middle,
+        .column.sideright {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .topnav a :not(:first-child),
+        .dropbtn {
+          display: none;
+        }
+        .topnav a.icon {
+          float: right;
+          display: block;
+        }
+        nav {
+          padding-left: 0%;
+        }
+      }
+      @media screen and (max-width: 500px) {
+        .topnav.responsive {
+          position: relative;
+        }
+        .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+        }
+        .topnav.responsive.dropdown {
+          float: none;
+        }
+        .topnav.responsive.dropdown-content {
+          position: relative;
+        }
+        .topnav.responsive.dropdown.dropbtn {
+          display: block;
+          width: 100%;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <div class="header">
+          <a href=""
+            ><img
+              src="images/myLogo.jpg"
+              style="float: left"
+              width="200p"
+              height="200p"
+              alt="generic logo - link to home"
+          /></a>
+        </div>
+      </header>
+      <nav class="topnav" id="myTopnav" aria-label="Main Navigation">
+        <a href="exercise6.html">Home</a>
+        <a href="news.html" class="active" aria-current="page" >News</a>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+            <button class="dropbtn" aria-haspopup="true" aria-expanded="false">
+                <a href="Dropdown +"></a>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+
+            </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" style="font-size: 15px;" class="icon"
+        onclick="myFunction()"
+        >&#9776;
+    </a>
+      </nav>
+      <div class="row" style="background-color: #bbb;">
+        <aside>
+            <div class="column sideleft" style="background-color: #ddd;">Keep it Innovative
+
+            </div>
+        </aside>
+            <main>
+                <div class="column middle" style="background-color: #bbb;">
+                    <h1>Latest News</h1>
+                    <article>
+                        <h2>Climate Change</h2>
+                        <p>Climate change is a pressing global issue that refers to long-term shifts in temperature, precipitation patterns, and other climatic indicators, primarily resulting from human activities such as burning fossil fuels, deforestation, and industrial processes. These activities release greenhouse gases, such as carbon dioxide and methane, into the atmosphere, leading to the intensification of the greenhouse effect and subsequent warming of the Earth's surface.</p>
+                    </article>
+                    <article>
+                        <h2>Global Warming</h2>
+                        <p>Global warming refers to the long-term increase in the average temperature of the Earth's atmosphere and oceans, primarily attributed to human activities such as the burning of fossil fuels, deforestation, and industrial processes. These activities release greenhouse gases like carbon dioxide (CO2), methane (CH4), and nitrous oxide (N2O) into the atmosphere, trapping heat and causing the planet's temperature to rise.</p>
+                    </article>
+                    <article>
+                        <h2>AI Evolution</h2>
+                        <p>Artificial Intelligence (AI) is a branch of computer science that focuses on creating intelligent machines capable of performing tasks that typically require human intelligence. These tasks include understanding natural language, recognizing patterns, learning from experience, reasoning, problem-solving, and adapting to new situations.</p>
+                    </article>
+                </div>
+            </main>
+      </div>
+    </div>
+    <footer class="footer">
+      <nav aria-label="Footer navigation">
+        <p>Home | News | Contact | Dropdown | About </p>
+      </nav>
+      <p>Written by you on Feb 19th 2024</p>
+      <p>Contact Cicilia Zhuo via email: </p>
+      <a href="mailto:ciciliazhuo@gmail.com">Click to send email</a>
+
+      <p>&copy; 2024 ltd</p>
+      <p>
+        This is based on a <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_template2_float">Design provided by w3schools.com</a>
+      </p>
+    </footer>
+    <script>
+      function myFunction(){
+        var x = document.getElementById("myTopnav");
+        if(x.className==="topnav"){
+          x.className += "responsive";
+        } else {
+          x.className="topnav";
+        }
+      }
+    </script>
+  </body>
+</html>
