@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Cicilia Zhuo</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .project {
+      display: none;
+      text-align: center;
+    }
+    .project.active {
+      display: block;
+    }
+    #project-gallery {
+      display: flex;
+      justify-content: center;
+    }
+    .project img {
+      max-width: 400px;
+      width: 100%; 
+      height: auto;
+      margin: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Cicilia Zhuo's Projects</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="project-gallery">
+    <div class="container">
+      <h2>Project Gallery</h2>
+      <div class="project active" id="project1">
+        <h3>Project 1: A reinterpretation of a classic work</h3>
+        <img src="assets/images/projects/graphic-design-alydodd.jpg.jpg" alt="A reinterpretation of a classic work">
+        <p>Majuri’s version of the book is made up of fifteen booklets, which each contain one of the essay’s informative chapters, making the writing both approachable and enjoyable in short windows of time,” as the designer explains. Majuri has added repeating patterns custom-designed by herself, as well as etchings by Rembrandt. These design choices relate to the ideas about reproduction of artworks expressed in Benjamin’s writing.</p>
+        <button onclick="showNextProject()">Next Project</button>
+      </div>
+      <div class="project" id="project2">
+        <h3>Project 2: A unique printed book</h3>
+        <img src="assets/images/projects/mariana_malhao_book.jpg" alt="Project 2 Image">
+        <p> Work on a publication focusing on Canadian foodd showcases their skills in branding, copywriting, photography, videography, and more. Adding a printed project</p>
+        <button onclick="showNextProject()">Next Project</button>
+        <button onclick="showPreviousProject()">Previous Project</button>
+      </div>
+      <div class="project" id="project3">
+        <h3>Project 3: A creative coloring book</h3>
+        <img src="assets/images/projects/chelsea-majuri-walter-benjamin.jpg" alt="Project 3 Image">
+        <p>Portugal-based designer Mariana Malhao’s online portfolio is full of playful projects, but this coloring book definitely stands out. Malhao has lent her design skills to a range of projects, from jewelry to ceramics. This coloring book represents her uniquely playful style in a creative way.</p>
+        <button onclick="showNextProject()">Next Project</button>
+        <button onclick="showPreviousProject()">Previous Project</button>
+      </div>
+      <div class="project" id="project4">
+        <h3>Project 4: Postcards with a message </h3>
+        <img src="assets/images/projects/graphic_design_alphabet_posters.jpg" alt="Project 4 Image">
+        <p>created this set of postcards to provide a platform for “babes of all genders everywhere to stand up to their elected officials and demand the protection of women’s reproductive rights.”
+        </p>
+        <button onclick="showNextProject()">Next Project</button>
+        <button onclick="showPreviousProject()">Previous Project</button>
+      </div>
+      <div class="project" id="project5">
+        <h3>Project 5: Posters illustrated with the alphabet</h3>
+        <img src="assets/images/projects/wake-coulter.jpg" alt="Project 5 Image">
+        <p>The results provide great inspiration for how to use limited materials to create something interesting.</p>
+        <button onclick="showPreviousProject()">Previous Project</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Cicilia Zhuo. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    let currentProject = 1;
+    const totalProjects = 5;
+
+    function showNextProject() {
+      if (currentProject < totalProjects) {
+        document.getElementById(`project${currentProject}`).classList.remove('active');
+        currentProject++;
+        document.getElementById(`project${currentProject}`).classList.add('active');
+      }
+    }
+
+    function showPreviousProject() {
+      if (currentProject > 1) {
+        document.getElementById(`project${currentProject}`).classList.remove('active');
+        currentProject--;
+        document.getElementById(`project${currentProject}`).classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
