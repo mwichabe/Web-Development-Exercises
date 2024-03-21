@@ -1,66 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CreativeStudio</title>
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>CreativeStudio</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CreativeStudio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Bootstrap CSS for responsive design -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CreativeStudio</h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="image-container">
+        <img src="assets/images/background.jpg" alt="Background Image" />
+      </div>
+      <div class="container">
+        <div class="content">
+          <h2 style="color: white">Welcome to CreativeStudio</h2>
+          <p style="color: white">
+            Your one-stop destination for creative design solutions
+          </p>
+          <a href="#about" class="btn" style="color: white; border-color: white;">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Cicilia Zhuo</h2>
+        <p>
+          Hello! My name is Cicilia Zhuo, and I am a passionate graphic designer
+          and content marketer with over five years of experience in the
+          industry. I specialize in creating visually stunning designs and
+          compelling content that engages and captivates audiences.
+        </p>
+        <p>
+          Throughout my career, I have worked with a diverse range of clients,
+          from startups to established brands, helping them achieve their
+          marketing and branding goals. I have a keen eye for detail and a
+          creative approach to problem-solving, allowing me to deliver
+          high-quality designs and content that resonate with target audiences.
+        </p>
+        <div class="about-info">
+          <div class="info-item">
+            <h3>Graphic Design</h3>
+            <p>
+              I excel in graphic design, utilizing industry-standard tools such
+              as Adobe Photoshop, Illustrator, and InDesign to create stunning
+              visuals, including logos, branding materials, and promotional
+              graphics.
+            </p>
+          </div>
+          <div class="info-item">
+            <h3>Content Marketing</h3>
+            <p>
+              My expertise in content marketing extends to creating compelling
+              written and visual content that drives engagement and conversion.
+              I am skilled in crafting blog posts, social media content, email
+              campaigns, and more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add dynamic content for projects -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/projects/graphic-design-alydodd.jpg.jpg"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Project 1: A reinterpretation of a classic work
+                </h5>
+                <p class="card-text">
+                  Majuri’s version of the book is made up of fifteen booklets,
+                  which each contain one of the essay’s informative chapters,
+                  making the writing both approachable and enjoyable in short
+                  windows of time,” as the designer explains.
+                </p>
+                <a href="projects.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/projects/mariana_malhao_book.jpg"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 2: A unique printed book</h5>
+                <p class="card-text">
+                  Work on a publication focusing on Canadian foodd showcases
+                  their skills in branding, copywriting, photography,
+                  videography, and more. Adding a printed project
+                </p>
+                <a href="projects.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="assets/images/projects/chelsea-majuri-walter-benjamin.jpg"
+                class="card-img-top"
+                alt="Project 3"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Project 3: A creative coloring book</h5>
+                <p class="card-text">
+                  Portugal-based designer Mariana Malhao’s online portfolio is
+                  full of playful projects, but this coloring book definitely
+                  stands out. Malhao has lent her design skills to a range of
+                  projects, from jewelry to ceramics. This coloring book
+                  represents her uniquely playful style in a creative way.
+                </p>
+                <a href="projects.html" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add a blog section -->
+    <section id="blog">
+      <div class="container">
+        <h2>Blog</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card">
+              <img src="assets/images/blogs/blog.png" alt="blog" />
+              <div class="card-body">
+                <h5 class="card-title">Typeroom</h5>
+                <p class="card-text">
+                  Typeroom dedicates its blog to typography inspiration. It
+                  features specific trends in typography, font designers, and
+                  the role of lettering in design and society. The posts cover
+                  anything from in-depth examinations of particular fonts to
+                  interviews with industry experts.
+                </p>
+                <a href="#" class="btn btn-primary read-more">Read More</a>
+                <div class="extra-content" style="display: none">
+                  <p>
+                    Typeroom also has a newsletter and an active community on
+                    social media. If you’re interested in writing and sharing
+                    your own typeface-related posts, there’s a submission
+                    option, too.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more blog cards here -->
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 CreativeStudio. All rights reserved.</p>
+        <!-- Add social media icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
         </ul>
-      </nav>
-    </div>
-  </header>
-  
-  <section class="hero">
-    <div class="image-container">
-      <img src="assets/images/background.jpg" alt="Background Image">
-    </div>
-    <div class="container">
-      <div class="content">
-        <h2 style="color: white;">Welcome to CreativeStudio</h2>
-        <p style="color: white;">Your one-stop destination for creative design solutions</p>
-        <a href="#about" class="btn" style="color: white; border-color: white;">Get Started</a>
       </div>
-    </div>
-  </section>
-  
-<!-- About Section -->
-<section id="about">
-  <div class="container">
-    <h2>About Cicilia Zhuo</h2>
-    <p>Hello! My name is Cicilia Zhuo, and I am a passionate graphic designer and content marketer with over five years of experience in the industry. I specialize in creating visually stunning designs and compelling content that engages and captivates audiences.</p>
-    <p>Throughout my career, I have worked with a diverse range of clients, from startups to established brands, helping them achieve their marketing and branding goals. I have a keen eye for detail and a creative approach to problem-solving, allowing me to deliver high-quality designs and content that resonate with target audiences.</p>
-    <div class="about-info">
-      <div class="info-item">
-        <h3>Graphic Design</h3>
-        <p>I excel in graphic design, utilizing industry-standard tools such as Adobe Photoshop, Illustrator, and InDesign to create stunning visuals, including logos, branding materials, and promotional graphics.</p>
-      </div>
-      <div class="info-item">
-        <h3>Content Marketing</h3>
-        <p>My expertise in content marketing extends to creating compelling written and visual content that drives engagement and conversion. I am skilled in crafting blog posts, social media content, email campaigns, and more.</p>
-      </div>
-    </div>
-  </div>
-</section>
+    </footer>
 
-  <!-- Remaining content -->
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 CreativeStudio. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="javaScript/script.js"></script>
-</body>
+    <!-- Bootstrap JS for responsive design -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="javaScript/script.js"></script>
+    <script>
+      document.querySelectorAll(".read-more").forEach(function (button) {
+        button.addEventListener("click", function (event) {
+          event.preventDefault();
+          var extraContent = this.nextElementSibling;
+          if (extraContent.style.display === "none") {
+            extraContent.style.display = "block";
+          } else {
+            extraContent.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
